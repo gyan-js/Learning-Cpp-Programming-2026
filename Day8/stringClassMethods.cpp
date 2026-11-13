@@ -50,6 +50,34 @@ void appendStringMethods() {
 }
 
 
+void findStringMethods() {
+
+     string s = "Hello World";
+    string str = "Hello";
+    char des[20];
+
+        
+     s.copy(des, 5, 0);
+    des[5] = '\0';
+    cout << "1. copy(): " << des << endl;
+
+
+    cout << "2. find(): " << s.find("World") << endl;
+
+ 
+    cout << "3. rfind(): " << s.rfind('l') << endl;
+
+ 
+    cout << "4. find_first_of(): " << s.find_first_of("aeiou") << endl;
+
+
+    cout << "5. find_last_of(): " << s.find_last_of("aeiou") << endl;
+
+    cout << "6. substr(): " << s.substr(0, 5) << endl;
+
+ 
+    cout << "7. compare(): " << s.compare(str) << endl;
+
 
 int main()
 
