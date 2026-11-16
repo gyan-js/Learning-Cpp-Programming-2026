@@ -1,20 +1,13 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main() {
-    string str = "Hello World";
-
-    string::iterator it;
-
+    int count = 0;
+    std::string str = "Swastika!";
+    std::string::iterator it;
     for (it = str.begin(); it != str.end(); ++it) {
-        cout << *it = *it - 32 << endl;
+        count++;
     }
 
-    cout<<"String in reverse order: ";
-    for (it = str.rbegin(); it != str.rend(); ++it) {
-        cout << *it;
-    }
-    cout << endl;
+    std::cout << "Length of the string is: " << count << std::endl;
 }
-
