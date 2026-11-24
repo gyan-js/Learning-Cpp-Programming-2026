@@ -1,13 +1,12 @@
-#include <stdio.h>
+#include <iostream>
 using namespace std;
 
 template <typename T>
-
 void getMax(T a, T b) {
     if (a > b) {
-        printf("%d is greater than %d\n", a, b);
+        cout << a << " is greater than " << b << endl;
     } else {
-        printf("%d is greater than %d\n", b, a);
+        cout << b << " is greater than " << a << endl;
     }
 }
 
